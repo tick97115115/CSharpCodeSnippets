@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <CodeSnippet Format="1.0.0">
+    <Header>
+      <Title>MSTest_TestInitialize</Title>
+      <Author>Eills</Author>
+      <Description>	
+        Marks a method that should be called before each test method. 
+        One such method should be present per test class.
+      </Description>
+      <Shortcut>MSTest_TestInitialize</Shortcut>
+    </Header>
+    <Snippet>
+      <Code Language="CSharp">
+        <![CDATA[
+        [TestInitialize]
+        public void TestInitialize()
+        {
+            $Content$
+        }]]>
+      </Code>
+      <Declarations>
+        <Literal>
+          <ID>Content</ID>
+          <ToolTip>put your test initialize flow here.</ToolTip>
+          <Default>Console.WriteLine("Inside TestInitialize");</Default>
+        </Literal>
+      </Declarations>
+    </Snippet>
+  </CodeSnippet>
+</CodeSnippets>
